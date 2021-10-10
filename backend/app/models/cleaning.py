@@ -25,7 +25,7 @@ class CleaningCreate(CleaningBase):
     price: float
 
 
-class CleaningUpgrade(CleaningBase):
+class CleaningUpdate(CleaningBase):
     cleaning_type: Optional[CleaningType]
 
 
@@ -35,6 +35,6 @@ class CleaningInDB(IDModelMixin, CleaningBase):
     cleaning_type: CleaningType
 
 
-class CleaningPublic(IDModelMixin, CLeaningBase):
+class CleaningPublic(IDModelMixin, CleaningBase):
     pass
 
